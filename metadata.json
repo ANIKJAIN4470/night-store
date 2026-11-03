@@ -1,0 +1,6 @@
+{
+  "name": "Papi's Kitchen",
+  "description": "Hostel Snacks, Delivered to Your Door. Fast food ordering for hostel students with room delivery and owner management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

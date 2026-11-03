@@ -1,0 +1,6 @@
+{
+  "orderId": "TEST-ORD-001",
+  "amount": 5500,
+  "customerEmail": "test@example.com",
+  "customerPhone": "+919876543210"
+}

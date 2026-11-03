@@ -1,0 +1,113 @@
+import { IProduct, ISettings } from './types.js';
+
+export const initialProducts: Omit<IProduct, 'id' | 'createdAt' | 'updatedAt'>[] = [
+  // ========== KURKURE (PepsiCo) ==========
+  { name: 'Kurkure - Masala Munch', slug: 'kurkure-masala-munch-20g', description: 'Crispy corn snacks with bold masala flavor', mrp: 20, sellingPrice: 30, stock: 100, category: 'Chips', imageUrl: 'https://m.media-amazon.com/images/I/71jfIVfj3sL._SX679_.jpg', available: true, isSpecial: true, isVeg: true, brand: 'Kurkure', flavor: 'Masala Munch', size: '20g', weight: '20g' },
+  { name: 'Kurkure - Chilli Chatka', slug: 'kurkure-chilli-chatka-20g', description: 'Spicy and tangy corn snacks', mrp: 20, sellingPrice: 30, stock: 100, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Kurkure', flavor: 'Chilli Chatka', size: '20g', weight: '20g' },
+  { name: 'Kurkure - Green Chutney', slug: 'kurkure-green-chutney-20g', description: 'Fresh green chutney flavored snacks', mrp: 20, sellingPrice: 30, stock: 100, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Kurkure', flavor: 'Green Chutney', size: '20g', weight: '20g' },
+
+  // ========== BALAJI WAFERS (₹10) ==========
+  { name: 'Balaji Wafers - Peri Peri', slug: 'balaji-wafers-peri-peri-15g', description: 'Spicy peri peri flavored wafer crisps', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Peri Peri', size: '15g', weight: '15g' },
+  { name: 'Balaji Wafers - Cream & Onion', slug: 'balaji-wafers-cream-onion-15g', description: 'Creamy onion flavored wafers', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Cream & Onion', size: '15g', weight: '15g' },
+  { name: 'Balaji Wafers - Tomato', slug: 'balaji-wafers-tomato-15g', description: 'Tangy tomato flavored wafers', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Tomato', size: '15g', weight: '15g' },
+  { name: 'Balaji Wafers - Masala Munch', slug: 'balaji-wafers-masala-15g', description: 'Savory masala flavored wafers', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Masala Munch', size: '15g', weight: '15g' },
+  { name: 'Balaji Wafers - Salt & Vinegar', slug: 'balaji-wafers-salt-vinegar-15g', description: 'Tangy salt and vinegar wafers', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Salt & Vinegar', size: '15g', weight: '15g' },
+  { name: 'Balaji Wafers - Simply Salted', slug: 'balaji-wafers-simply-salted-15g', description: 'Classic salted wafer crisps', mrp: 10, sellingPrice: 20, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Simply Salted', size: '15g', weight: '15g' },
+
+  // ========== BALAJI LARGE (₹45) ==========
+  { name: 'Balaji Large - Tomato Twist', slug: 'balaji-large-tomato-twist-55g', description: 'Large packet of tomato flavored wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Tomato Twist', size: '55g', weight: '55g' },
+  { name: 'Balaji Large - Masala Masti', slug: 'balaji-large-masala-masti-55g', description: 'Large packet masala flavored wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Masala Masti', size: '55g', weight: '55g' },
+  { name: 'Balaji Large - Peri Peri', slug: 'balaji-large-peri-peri-55g', description: 'Large packet peri peri flavored wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Peri Peri', size: '55g', weight: '55g' },
+  { name: 'Balaji Large - Cream & Onion', slug: 'balaji-large-cream-onion-55g', description: 'Large packet cream & onion wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Cream & Onion', size: '55g', weight: '55g' },
+  { name: 'Balaji Large - Salt & Vinegar', slug: 'balaji-large-salt-vinegar-55g', description: 'Large packet salt & vinegar wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Salt & Vinegar', size: '55g', weight: '55g' },
+  { name: 'Balaji Large - Plain Salted', slug: 'balaji-large-plain-salted-55g', description: 'Large packet plain salted wafers', mrp: 45, sellingPrice: 55, stock: 50, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Balaji', flavor: 'Plain Salted', size: '55g', weight: '55g' },
+
+  // ========== LAYS ==========
+  { name: 'Lays - Classic Salted', slug: 'lays-classic-salted-30g', description: 'Premium potato chips with classic salt', mrp: 30, sellingPrice: 40, stock: 80, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Lays', flavor: 'Classic Salted', size: '30g', weight: '30g' },
+  { name: 'Lays - Peri Peri', slug: 'lays-peri-peri-30g', description: 'Spicy peri peri potato chips', mrp: 30, sellingPrice: 40, stock: 80, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Lays', flavor: 'Peri Peri', size: '30g', weight: '30g' },
+  { name: 'Lays - Magic Masala', slug: 'lays-magic-masala-30g', description: 'Bold masala flavored potato chips', mrp: 30, sellingPrice: 40, stock: 80, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Lays', flavor: 'Magic Masala', size: '30g', weight: '30g' },
+  { name: 'Lays - Cream & Onion', slug: 'lays-cream-onion-30g', description: 'Creamy onion flavored chips', mrp: 30, sellingPrice: 40, stock: 80, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Lays', flavor: 'Cream & Onion', size: '30g', weight: '30g' },
+
+  // ========== UNCLE CHIPPS ==========
+  { name: 'Uncle Chipps - Classic', slug: 'uncle-chipps-classic-20g', description: 'Classic salted wafer crisps', mrp: 15, sellingPrice: 25, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Uncle Chipps', flavor: 'Classic', size: '20g', weight: '20g' },
+  { name: 'Uncle Chipps - Pepper', slug: 'uncle-chipps-pepper-20g', description: 'Pepper flavored wafer crisps', mrp: 15, sellingPrice: 25, stock: 100, category: 'Wafers', imageUrl: 'https://images.unsplash.com/photo-1545677213-3788a3a8f7f0?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Uncle Chipps', flavor: 'Pepper', size: '20g', weight: '20g' },
+
+  // ========== BINGO ==========
+  { name: 'Bingo - Mad Angles', slug: 'bingo-mad-angles-32g', description: 'Spicy triangular snacks with intense flavors', mrp: 20, sellingPrice: 30, stock: 80, category: 'Namkeen', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Bingo', flavor: 'Mad Angles', size: '32g', weight: '32g' },
+
+  // ========== HALDIRAMS NAMKEEN ==========
+  { name: 'Haldirams - Moong Mix', slug: 'haldiram-moong-mix-55g', description: 'Classic moong dal and legume mixture', mrp: 30, sellingPrice: 40, stock: 60, category: 'Namkeen', imageUrl: 'https://images.unsplash.com/photo-1585518419759-c2ba96f23ce8?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Haldirams', flavor: 'Moong Mix', size: '55g', weight: '55g' },
+  { name: 'Haldirams - Aloo Bhujia', slug: 'haldiram-aloo-bhujia-55g', description: 'Crispy potato noodles with spices', mrp: 30, sellingPrice: 40, stock: 60, category: 'Namkeen', imageUrl: 'https://images.unsplash.com/photo-1585518419759-c2ba96f23ce8?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Haldirams', flavor: 'Aloo Bhujia', size: '55g', weight: '55g' },
+  { name: 'Haldirams - Sev Bhujia', slug: 'haldiram-sev-bhujia-55g', description: 'Savory gram flour noodles', mrp: 30, sellingPrice: 40, stock: 60, category: 'Namkeen', imageUrl: 'https://images.unsplash.com/photo-1585518419759-c2ba96f23ce8?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Haldirams', flavor: 'Sev', size: '55g', weight: '55g' },
+
+  // ========== TOO YUMM ==========
+  { name: 'Too Yumm - Baked Chips', slug: 'too-yumm-baked-chips-35g', description: 'Healthier baked potato chips', mrp: 25, sellingPrice: 35, stock: 50, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Too Yumm', flavor: 'Baked Chips', size: '35g', weight: '35g' },
+
+  // ========== PRINGLES ==========
+  { name: 'Pringles - Original', slug: 'pringles-original-45g', description: 'Iconic stackable potato crisps', mrp: 50, sellingPrice: 60, stock: 40, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Pringles', flavor: 'Original', size: '45g', weight: '45g' },
+  { name: 'Pringles - Masala', slug: 'pringles-masala-45g', description: 'Spicy masala flavored stackable crisps', mrp: 50, sellingPrice: 60, stock: 40, category: 'Chips', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Pringles', flavor: 'Masala', size: '45g', weight: '45g' },
+
+  // ========== INSTANT NOODLES ==========
+  { name: 'Maggi - Masala Noodles', slug: 'maggi-masala-77g', description: 'Quick cook masala flavored instant noodles', mrp: 12, sellingPrice: 22, stock: 150, category: 'Instant Noodles', imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ae1?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Maggi', flavor: 'Masala', size: '77g', weight: '77g' },
+  { name: 'Maggi - Chicken Noodles', slug: 'maggi-chicken-77g', description: 'Quick cook chicken flavored noodles', mrp: 12, sellingPrice: 22, stock: 150, category: 'Instant Noodles', imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ae1?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: false, brand: 'Maggi', flavor: 'Chicken', size: '77g', weight: '77g' },
+  { name: 'Top Ramen - Chicken', slug: 'top-ramen-chicken-70g', description: 'Instant chicken flavored ramen', mrp: 10, sellingPrice: 20, stock: 150, category: 'Instant Noodles', imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ae1?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: false, brand: 'Top Ramen', flavor: 'Chicken', size: '70g', weight: '70g' },
+  { name: 'Top Ramen - Masala', slug: 'top-ramen-masala-70g', description: 'Instant masala flavored ramen', mrp: 10, sellingPrice: 20, stock: 150, category: 'Instant Noodles', imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ae1?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Top Ramen', flavor: 'Masala', size: '70g', weight: '70g' },
+
+  // ========== CUP NOODLES ==========
+  { name: 'Maggi Cup Noodles - Masala', slug: 'maggi-cup-noodles-masala-60g', description: 'Ready to cook cup noodles - masala', mrp: 30, sellingPrice: 40, stock: 80, category: 'Instant Noodles', imageUrl: 'https://images.unsplash.com/photo-1555939594-58d7cb561ae1?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Maggi', flavor: 'Masala Cup', size: '60g', weight: '60g' },
+
+  // ========== BISCUITS & COOKIES ==========
+  { name: 'Britannia - Bourbon Biscuits', slug: 'britannia-bourbon-75g', description: 'Chocolate cream filled biscuits', mrp: 25, sellingPrice: 35, stock: 70, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Britannia', flavor: 'Bourbon', size: '75g', weight: '75g' },
+  { name: 'Britannia - Tiger Biscuits', slug: 'britannia-tiger-70g', description: 'Spicy Indian snack biscuits', mrp: 20, sellingPrice: 30, stock: 70, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Britannia', flavor: 'Tiger', size: '70g', weight: '70g' },
+  { name: 'Britannia - Good Day Biscuits', slug: 'britannia-good-day-75g', description: 'Butter flavored cream biscuits', mrp: 25, sellingPrice: 35, stock: 70, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Britannia', flavor: 'Good Day', size: '75g', weight: '75g' },
+  { name: 'Parle - G Biscuits', slug: 'parle-g-100g', description: 'Classic Indian wheat biscuits', mrp: 10, sellingPrice: 20, stock: 150, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Parle', flavor: 'Classic', size: '100g', weight: '100g' },
+  { name: 'Parle - Hide & Seek', slug: 'parle-hide-seek-75g', description: 'Chocolate chip biscuits', mrp: 20, sellingPrice: 30, stock: 70, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Parle', flavor: 'Hide & Seek', size: '75g', weight: '75g' },
+  { name: 'Sunfeast - Bounce', slug: 'sunfeast-bounce-75g', description: 'Crunchy chocolate biscuits', mrp: 25, sellingPrice: 35, stock: 60, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Sunfeast', flavor: 'Bounce', size: '75g', weight: '75g' },
+  { name: 'Sunfeast - Dark Fantasy', slug: 'sunfeast-dark-fantasy-75g', description: 'Dark chocolate indulgent biscuits', mrp: 25, sellingPrice: 35, stock: 60, category: 'Cookies & Biscuits', imageUrl: 'https://images.unsplash.com/photo-1590080876/biscuits?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Sunfeast', flavor: 'Dark Fantasy', size: '75g', weight: '75g' },
+
+  // ========== CHOCOLATES ==========
+  { name: 'Cadbury - Dairy Milk', slug: 'cadbury-dairy-milk-40g', description: 'Smooth creamy milk chocolate', mrp: 60, sellingPrice: 70, stock: 50, category: 'Chocolates', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Cadbury', flavor: 'Dairy Milk', size: '40g', weight: '40g' },
+  { name: 'Cadbury - Silk', slug: 'cadbury-silk-40g', description: 'Premium creamy milk chocolate', mrp: 60, sellingPrice: 70, stock: 50, category: 'Chocolates', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Cadbury', flavor: 'Silk', size: '40g', weight: '40g' },
+  { name: 'Cadbury - Fuse', slug: 'cadbury-fuse-30g', description: 'Chocolate with nuts and raisins', mrp: 35, sellingPrice: 45, stock: 50, category: 'Chocolates', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Cadbury', flavor: 'Fuse', size: '30g', weight: '30g' },
+  { name: 'Ferrero Rocher', slug: 'ferrero-rocher-12g', description: 'Crispy wafer with hazelnut chocolate', mrp: 35, sellingPrice: 45, stock: 50, category: 'Chocolates', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: true, isVeg: true, brand: 'Ferrero Rocher', flavor: 'Hazelnut', size: '12g', weight: '12g' },
+
+  // ========== CANDIES & SWEETS ==========
+  { name: 'Candyland - Lollipop Mix', slug: 'candyland-lollipop-60g', description: 'Assorted fruity lollipops', mrp: 15, sellingPrice: 25, stock: 100, category: 'Candies', imageUrl: 'https://images.unsplash.com/photo-1563288606-b78c4f80e5fb?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Candyland', flavor: 'Assorted Fruity', size: '60g', weight: '60g' },
+  { name: 'Center Fresh - Gum', slug: 'center-fresh-gum-11g', description: 'Minty chewing gum', mrp: 5, sellingPrice: 15, stock: 150, category: 'Candies', imageUrl: 'https://images.unsplash.com/photo-1563288606-b78c4f80e5fb?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Center Fresh', flavor: 'Mint', size: '11g', weight: '11g' },
+
+  // ========== DRINKS & JUICES ==========
+  { name: 'Real - Orange Juice', slug: 'real-orange-juice-200ml', description: 'Natural orange juice 200ml', mrp: 25, sellingPrice: 35, stock: 80, category: 'Drinks', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Real', flavor: 'Orange', size: '200ml', weight: '200ml' },
+  { name: 'Real - Mixed Fruit Juice', slug: 'real-mixed-fruit-200ml', description: 'Mixed fruit juice 200ml', mrp: 25, sellingPrice: 35, stock: 80, category: 'Drinks', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Real', flavor: 'Mixed Fruit', size: '200ml', weight: '200ml' },
+  { name: 'Minute Maid - Apple Juice', slug: 'minute-maid-apple-200ml', description: 'Apple juice 200ml', mrp: 25, sellingPrice: 35, stock: 80, category: 'Drinks', imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd94548?auto=format&fit=crop&w=500&q=60', available: true, isSpecial: false, isVeg: true, brand: 'Minute Maid', flavor: 'Apple', size: '200ml', weight: '200ml' },
+
+  // ========== NEW ADDITIONS ==========
+  { name: 'Britannia - Bourbon Biscuits 120g', slug: 'britannia-bourbon-120g', description: 'Chocolate cream filled biscuits - 120g pack', mrp: 30, sellingPrice: 40, stock: 100, category: 'Cookies & Biscuits', imageUrl: 'https://m.media-amazon.com/images/I/71+GOHJlyQL._SX679_.jpg', available: true, isSpecial: false, isVeg: true, brand: 'Britannia', flavor: 'Bourbon', size: '120g', weight: '120g' },
+  { name: 'Everest - Chat Masala 40g', slug: 'everest-chat-masala-40g', description: 'Spiced chaat masala seasoning - 40g', mrp: 20, sellingPrice: 30, stock: 150, category: 'Drinks', imageUrl: 'https://m.media-amazon.com/images/I/71zX3U0cX+L._SX679_.jpg', available: true, isSpecial: false, isVeg: true, brand: 'Everest', flavor: 'Chat Masala', size: '40g', weight: '40g' },
+  { name: 'Everest - Chat Masala 140g', slug: 'everest-chat-masala-140g', description: 'Spiced chaat masala seasoning - 140g large pack', mrp: 70, sellingPrice: 80, stock: 80, category: 'Drinks', imageUrl: 'https://m.media-amazon.com/images/I/71rVn1OyZHL._SX679_.jpg', available: true, isSpecial: true, isVeg: true, brand: 'Everest', flavor: 'Chat Masala', size: '140g', weight: '140g' },
+  { name: 'Amul - Moti Milk 450ml', slug: 'amul-moti-450ml', description: 'Amul Moti fresh milk - 450ml', mrp: 32, sellingPrice: 42, stock: 120, category: 'Drinks', imageUrl: 'https://m.media-amazon.com/images/I/71a+sB9gJHL._SX679_.jpg', available: true, isSpecial: true, isVeg: true, brand: 'Amul', flavor: 'Moti Milk', size: '450ml', weight: '450ml' },
+];
+
+export const initialSettings: ISettings = {
+  businessName: "Papi's Kitchen",
+  tagline: 'Hot & Fresh Snacks, Delivered to Your Hostel Room!',
+  contactPhone: '6375157243',
+  whatsappPhone: '6375157243',
+  openingTime: '21:00', // 9 PM
+  closingTime: '05:00',  // 5 AM
+  isOpen: true,
+  deliveryFee: 15,
+  minOrderAmount: 50,
+  estimatedDeliveryTime: '15-20 mins',
+  acceptedHostels: [
+    'Tagore Bhawan - C (Block A)',
+    'Tagore Bhawan - C (Block B)',
+    'Tagore Bhawan - C (Block C)'
+  ],
+  paymentMethods: {
+    cod: true,
+    upi: true
+  },
+  upiQrUrl: '/upi-qr.jpe',
+  announcement: '🔥 Hot & fresh snacks delivered right to your room! Call/WhatsApp 6375157243 | Kitchen Hours: 9 PM - 5 AM IST',
+  updatedAt: new Date().toISOString()
+};

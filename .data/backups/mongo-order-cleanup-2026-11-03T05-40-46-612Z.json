@@ -1,0 +1,685 @@
+{
+  "orders": [
+    {
+      "_id": "6acdde9bc5a19c18588d0d48",
+      "orderNumber": "PK-58A0E3",
+      "trackingToken": "ef40b365b57ad04ac85711422231496f",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 4,
+          "subtotal": 160,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "7654321098",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "a/g/4",
+      "roomNumber": "456",
+      "deliveryInstructions": "no",
+      "subtotal": 160,
+      "deliveryFee": 15,
+      "total": 175,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Paid",
+      "orderStatus": "Delivered",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-13T07:32:43.312Z",
+          "note": "Order successfully placed by student"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-10-13T07:35:18.838Z",
+          "note": "Updated by admin (admin papi)"
+        },
+        {
+          "status": "Preparing",
+          "timestamp": "2026-10-13T07:35:20.907Z",
+          "note": "Updated by admin (admin papi)"
+        },
+        {
+          "status": "Out for Delivery",
+          "timestamp": "2026-10-13T07:35:22.826Z",
+          "note": "Updated by admin (admin papi)"
+        },
+        {
+          "status": "Delivered",
+          "timestamp": "2026-10-13T07:35:30.960Z",
+          "note": "Updated by admin (admin papi)"
+        }
+      ],
+      "idempotencyKey": "ord-1791876763218-b0gujzx",
+      "createdAt": "2026-10-13T07:32:43.333Z",
+      "updatedAt": "2026-10-13T17:09:12.970Z",
+      "__v": 4,
+      "customerId": "6acd1fdcc5a19c18588d0d47"
+    },
+    {
+      "_id": "6ace677ae25d4a03d677304a",
+      "orderNumber": "PK-8AE691",
+      "trackingToken": "4ba58d183f26662b44532e07376557c6",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d3f",
+          "productName": "Spicy Paneer Supreme Burger",
+          "unitPrice": 85,
+          "quantity": 4,
+          "subtotal": 340,
+          "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "7869903451",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "A/A/0",
+      "roomNumber": "112",
+      "deliveryInstructions": "nope",
+      "subtotal": 340,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 355,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "orderStatus": "Cancelled",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-13T17:16:42.401Z",
+          "note": "Order successfully placed by student"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-13T17:37:02.308Z",
+          "note": "Cancelled: due to staff problems"
+        }
+      ],
+      "idempotencyKey": "ord-1791911802309-qv62uau",
+      "createdAt": "2026-10-13T17:16:42.412Z",
+      "updatedAt": "2026-10-13T17:37:02.422Z",
+      "__v": 1,
+      "cancellationReason": "due to staff problems"
+    },
+    {
+      "_id": "6acf3b3c51332cf3a786b980",
+      "orderNumber": "PK-FF758B",
+      "trackingToken": "2305635b0ab0e038c8c6215b5f23e714",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 4,
+          "subtotal": 160,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "A",
+      "roomNumber": "112",
+      "deliveryInstructions": "no",
+      "subtotal": 160,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 175,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:20:12.104Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1791966012005-gij0rs2",
+      "createdAt": "2026-10-14T08:20:12.116Z",
+      "updatedAt": "2026-10-14T08:20:12.116Z",
+      "__v": 0
+    },
+    {
+      "_id": "6acf3bb551332cf3a786b984",
+      "orderNumber": "PK-245B8F",
+      "trackingToken": "dc0b21089f3f4a9da2d17a6d9a6c4f9b",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d46",
+          "productName": "Midnight Study Hunger Combo",
+          "unitPrice": 135,
+          "quantity": 1,
+          "subtotal": 135,
+          "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "d",
+      "roomNumber": "122",
+      "deliveryInstructions": "no",
+      "subtotal": 135,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 150,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Cancelled",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:22:13.288Z",
+          "note": "Order successfully placed by student"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-10-14T08:35:58.808Z",
+          "note": "Cancelled: Ordered by mistake"
+        }
+      ],
+      "idempotencyKey": "ord-1791966133157-r4d75on",
+      "createdAt": "2026-10-14T08:22:13.289Z",
+      "updatedAt": "2026-10-14T08:35:58.937Z",
+      "__v": 1,
+      "cancellationReason": "Ordered by mistake"
+    },
+    {
+      "_id": "6acf3f0b79f54037530f0f2b",
+      "orderNumber": "PK-7A3569",
+      "trackingToken": "49b0fc779c6a3d14431c10134778c0f5",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d3f",
+          "productName": "Spicy Paneer Supreme Burger",
+          "unitPrice": 85,
+          "quantity": 1,
+          "subtotal": 85,
+          "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "A",
+      "roomNumber": "112",
+      "deliveryInstructions": "no",
+      "subtotal": 85,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 100,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:36:27.682Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1791966987603-6o6x6jl",
+      "createdAt": "2026-10-14T08:36:27.688Z",
+      "updatedAt": "2026-10-14T08:36:27.688Z",
+      "__v": 0
+    },
+    {
+      "_id": "6acf3ff879f54037530f0f38",
+      "orderNumber": "PK-0AF2F7",
+      "trackingToken": "337ffa47263dfc00df3e512ac318d634",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d3f",
+          "productName": "Spicy Paneer Supreme Burger",
+          "unitPrice": 85,
+          "quantity": 2,
+          "subtotal": 170,
+          "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "A",
+      "roomNumber": "112",
+      "deliveryInstructions": "no",
+      "subtotal": 170,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 185,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:40:24.972Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1791967224870-r7ela31",
+      "createdAt": "2026-10-14T08:40:24.974Z",
+      "updatedAt": "2026-10-14T08:40:24.974Z",
+      "__v": 0
+    },
+    {
+      "_id": "6acf40a879f54037530f0f3e",
+      "orderNumber": "PK-6F011E",
+      "trackingToken": "d2c1a38328ebab1807e681fcca25c075",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d44",
+          "productName": "Cold Coffee with Choco Fudge",
+          "unitPrice": 55,
+          "quantity": 3,
+          "subtotal": 165,
+          "imageUrl": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "c",
+      "roomNumber": "112",
+      "deliveryInstructions": "ok",
+      "subtotal": 165,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 180,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:43:20.613Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1791967400555-mtrpmzz",
+      "createdAt": "2026-10-14T08:43:20.615Z",
+      "updatedAt": "2026-10-14T08:43:20.615Z",
+      "__v": 0
+    },
+    {
+      "_id": "6acf4368320ca522827bf639",
+      "orderNumber": "PK-2373A3",
+      "trackingToken": "0eecc6d55bbb1aa0b457effbad97faac",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d39",
+          "productName": "Double Cheese Burst Maggi",
+          "unitPrice": 65,
+          "quantity": 1,
+          "subtotal": 65,
+          "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "A",
+      "roomNumber": "112",
+      "deliveryInstructions": "no",
+      "subtotal": 65,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 80,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T08:55:04.038Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1791968103983-53igbhl",
+      "createdAt": "2026-10-14T08:55:04.073Z",
+      "updatedAt": "2026-10-14T08:55:04.073Z",
+      "__v": 0
+    },
+    {
+      "_id": "6acf477b859abea55051fb18",
+      "orderNumber": "PK-050E1A",
+      "trackingToken": "7e2e46fd7037d7c35e15f32603b17af8",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d39",
+          "productName": "Double Cheese Burst Maggi",
+          "unitPrice": 65,
+          "quantity": 1,
+          "subtotal": 65,
+          "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "C",
+      "roomNumber": "123",
+      "deliveryInstructions": "no",
+      "subtotal": 65,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 80,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "orderStatus": "Confirmed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-14T09:12:27.381Z",
+          "note": "Order successfully placed by student"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-10-14T09:17:03.956Z",
+          "note": "Payment received via Razorpay (ID: pay_TnjfQA41ET6J8H)"
+        }
+      ],
+      "idempotencyKey": "ord-1791969147064-k39rsmp",
+      "createdAt": "2026-10-14T09:12:27.401Z",
+      "updatedAt": "2026-10-14T09:17:03.957Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae62a9bbf8acca386ff2e11",
+      "orderNumber": "PK-7DDFC0",
+      "trackingToken": "20e933b853ea70dc95697fb990150a5c",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 2,
+          "subtotal": 80,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "Test Order",
+      "customerPhone": "9876543210",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "",
+      "roomNumber": "214",
+      "subtotal": 80,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 95,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-31T17:51:23.069Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "verify-5378276a-c4bc-4bb8-8374-bc1a42706567",
+      "createdAt": "2026-10-31T17:51:23.087Z",
+      "updatedAt": "2026-10-31T17:51:23.087Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae631babf8acca386ff2e12",
+      "orderNumber": "PK-023633",
+      "trackingToken": "12552ae029ad9dcf31264afc965725db",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 1,
+          "subtotal": 40,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "productId": "6acd1921c5a19c18588d0d44",
+          "productName": "Cold Coffee with Choco Fudge",
+          "unitPrice": 55,
+          "quantity": 1,
+          "subtotal": 55,
+          "imageUrl": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "",
+      "roomNumber": "214",
+      "deliveryInstructions": "hinge",
+      "subtotal": 95,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 110,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-31T18:21:46.419Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1793470906259-g70i1hj",
+      "createdAt": "2026-10-31T18:21:46.420Z",
+      "updatedAt": "2026-10-31T18:21:46.420Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae633b12e9ddb1f2198eb70",
+      "orderNumber": "PK-E3EF69",
+      "trackingToken": "7894988861e57047b6b80f22ac6a763f",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 2,
+          "subtotal": 80,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "",
+      "roomNumber": "134t",
+      "deliveryInstructions": "ertfy",
+      "subtotal": 80,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 95,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-31T18:30:09.410Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1793471409269-hfse44r",
+      "createdAt": "2026-10-31T18:30:09.432Z",
+      "updatedAt": "2026-10-31T18:30:09.432Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae637792e26536c0aee6c0e",
+      "orderNumber": "PK-E83C0A",
+      "trackingToken": "a09dc845c7873ced41792fb1d048e3a7",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d38",
+          "productName": "Classic Masala Maggi",
+          "unitPrice": 40,
+          "quantity": 2,
+          "subtotal": 80,
+          "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "UPI Test",
+      "customerPhone": "9876543210",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "",
+      "roomNumber": "214",
+      "subtotal": 80,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 95,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-31T18:46:17.058Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "upi-254c0433-93cf-475e-8560-1c4816574fb4",
+      "createdAt": "2026-10-31T18:46:17.073Z",
+      "updatedAt": "2026-10-31T18:46:17.073Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae637f32e26536c0aee6c19",
+      "orderNumber": "PK-1B1B98",
+      "trackingToken": "5047ce56e3880580cb6f11c308c10812",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d39",
+          "productName": "Double Cheese Burst Maggi",
+          "unitPrice": 65,
+          "quantity": 1,
+          "subtotal": 65,
+          "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "Anik jain",
+      "customerPhone": "6375126734",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "",
+      "roomNumber": "245",
+      "deliveryInstructions": "rtyt",
+      "subtotal": 65,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 80,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-10-31T18:48:19.894Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1793472499784-gvd7c13",
+      "createdAt": "2026-10-31T18:48:19.899Z",
+      "updatedAt": "2026-10-31T18:48:19.899Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae6df03c3da8b4e323f10e9",
+      "orderNumber": "PK-5EC4C9",
+      "trackingToken": "6e07fd1fe5d148cc5c0129af75ed9518",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d44",
+          "productName": "Cold Coffee with Choco Fudge",
+          "unitPrice": 55,
+          "quantity": 2,
+          "subtotal": 110,
+          "imageUrl": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Boys Hostel 1 (BH-1)",
+      "hostelBlock": "r",
+      "roomNumber": "123",
+      "deliveryInstructions": "no thanks",
+      "subtotal": 110,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 125,
+      "paymentMethod": "UPI",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-11-01T06:41:07.610Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1793515267453-k3jr6a4",
+      "createdAt": "2026-11-01T06:41:07.638Z",
+      "updatedAt": "2026-11-01T06:41:07.638Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae74f2c0e6552172c0596a6",
+      "orderNumber": "PK-2A7E8E",
+      "trackingToken": "79f86c06bb9aeca59985b2572e485503",
+      "customerId": "6acd1fdcc5a19c18588d0d47",
+      "items": [
+        {
+          "productId": "6acd1921c5a19c18588d0d44",
+          "productName": "Cold Coffee with Choco Fudge",
+          "unitPrice": 55,
+          "quantity": 2,
+          "subtotal": 110,
+          "imageUrl": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "customerName": "ANIK JAIN",
+      "customerPhone": "6375157243",
+      "hostelName": "Tagore Bhawan - C (Block A)",
+      "hostelBlock": "c",
+      "roomNumber": "312",
+      "deliveryInstructions": "bhua",
+      "subtotal": 110,
+      "deliveryFee": 15,
+      "discount": 0,
+      "total": 125,
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "statusHistory": [
+        {
+          "status": "Placed",
+          "timestamp": "2026-11-01T14:39:40.482Z",
+          "note": "Order successfully placed by student"
+        }
+      ],
+      "idempotencyKey": "ord-1793543980326-zqk05y2",
+      "createdAt": "2026-11-01T14:39:40.522Z",
+      "updatedAt": "2026-11-01T14:39:40.522Z",
+      "__v": 0
+    }
+  ],
+  "customerTransactions": []
+}
