@@ -77,7 +77,9 @@ adminRouter.post('/auth/login', async (req: Request, res: Response) => {
     const adminId = admin.id || (admin as any)._id;
     const otp = createOTP(adminId);
 
-    console.log(`✅ OTP sent to admin ${username}: ${otp}`);
+    if (process.env.NODE_ENV !== 'production') {
+      console.log(`✅ OTP generated for admin ${username}: ${otp}`);
+    }
 
     res.json({
       success: true,

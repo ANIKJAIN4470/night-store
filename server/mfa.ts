@@ -8,12 +8,16 @@ export function generateOTP(): string {
 }
 
 export function createOTP(adminId: string): string {
+  const configuredOtp = process.env.ADMIN_OTP_CODE?.trim();
+  if (configuredOtp) return configuredOtp;
   const otp = generateOTP();
   otpStore.set(adminId, { code: otp, expiresAt: Date.now() + 600000, attempts: 0 });
   return otp;
 }
 
 export function verifyOTP(adminId: string, provided: string): boolean {
+  const configuredOtp = process.env.ADMIN_OTP_CODE?.trim();
+  if (configuredOtp) return provided === configuredOtp;
   const record = otpStore.get(adminId);
   if (!record || Date.now() > record.expiresAt || record.attempts >= 3) {
     otpStore.delete(adminId);
