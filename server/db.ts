@@ -77,6 +77,10 @@ export async function initDatabase() {
   loadLocalStore();
 
   const mongoUri = process.env.MONGODB_URI;
+  const isProduction = process.env.NODE_ENV === 'production';
+  if (isProduction && (!mongoUri || mongoUri.trim() === '')) {
+    throw new Error('MONGODB_URI is required in production. Refusing to start with ephemeral local storage.');
+  }
   if (mongoUri && mongoUri.trim() !== '') {
     try {
       console.log('Attempting MongoDB connection...');
@@ -94,6 +98,9 @@ export async function initDatabase() {
       console.warn('⚠️  Falling back to local persistent store');
       isMongoConnected = false;
       mongoError = err.message;
+      if (isProduction) {
+        throw new Error(`MongoDB connection failed in production: ${err.message}`);
+      }
     }
   } else {
     isMongoConnected = false;

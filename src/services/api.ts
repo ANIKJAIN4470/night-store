@@ -1,6 +1,8 @@
 import { Product, BusinessSettings, Order } from '../types.js';
 
-const API_BASE = '/api';
+// Local development uses Vite's same-origin API path. Set VITE_API_BASE_URL
+// on Vercel to your Railway service URL (without a trailing slash).
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
 
 export class ApiError extends Error {
   statusCode: number;
